@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -80px;
+    background-color:var(--Pale_blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin: 1rem;
+    position: relative;
+}
+
+.card_container{
+    background-color: var(--Very_pale_blue);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1rem;
+}
+ .illustration_hero_img {
+    border-top-right-radius: 1.1rem;
+    border-top-left-radius: 1.1rem;
+    width: 350px;
+    height: auto;
+}
+.card_container_content{
+    padding: 1rem;    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.content p {
+    text-align: center;
+    margin-top: 1rem;
+}
+.annual_plan_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: var(--Pale_blue);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    gap: 0.5rem;
+}
+.annual_plan_container img {
+    height: auto;
+    max-width: 10vw;
+    margin-right: 0.5rem;
+}
+.annual_plan_container span {
+   font-size: 15px;
+   font-weight: 100;
+   color: var(--Desaturated_blue);
+}
+.annual_plan_container a {
+margin-left: 0.7rem;
+font-weight: 100;
+}
+.payment_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment_container button {
+    min-width: 16.2rem;
+    height: 2.5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--Bright_blue);
+    color: var(--Very_pale_blue);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    cursor: pointer;   
+    box-shadow: 0 20px 10px var(--clr-pale-blue);
+}
+.payment_container button:hover{
+    background-color: var(--Very_pale_blue);
+    color: var(--Bright_blue);
+    border: solid 1px var(--Bright_blue);
+}
+.payment_container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Desaturated_blue);
+    font-size: 14px;
+}
+.payment_container a:hover{
+    color: var(--Dark_blue);
+}
+
+
